@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Создать CV</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Создание резюме</h1>
+
+    <form id="cvForm">
+        <input type="text" id="name" placeholder="Ваше имя" required>
+        <input type="text" id="profession" placeholder="Профессия" required>
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="text" id="phone" placeholder="Телефон" required>
+        
+        <textarea id="about" placeholder="О себе" required></textarea>
+        <textarea id="skills" placeholder="Навыки (через запятую)" required></textarea>
+
+        <button type="submit">Сохранить CV</button>
+    </form>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
