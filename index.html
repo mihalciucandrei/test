@@ -2,24 +2,53 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Создать CV</title>
+    <title>Создать IT CV</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <div class="container">
-    <h1>Создание резюме</h1>
+    <h1>Создание IT-резюме</h1>
 
     <form id="cvForm">
+
+        <h2>Основная информация</h2>
         <input type="text" id="name" placeholder="Ваше имя" required>
-        <input type="text" id="profession" placeholder="Профессия" required>
+        <input type="text" id="profession" placeholder="Профессия (Frontend Developer и т.д.)" required>
+        <input type="text" id="location" placeholder="Город, страна">
+
+        <h2>Контакты</h2>
         <input type="email" id="email" placeholder="Email" required>
-        <input type="text" id="phone" placeholder="Телефон" required>
-        
-        <textarea id="about" placeholder="О себе" required></textarea>
-        <textarea id="skills" placeholder="Навыки (через запятую)" required></textarea>
+        <input type="text" id="phone" placeholder="Телефон">
+        <input type="url" id="github" placeholder="GitHub (https://github.com/username)">
+        <input type="url" id="linkedin" placeholder="LinkedIn (https://linkedin.com/in/username)">
+
+        <h2>О себе</h2>
+        <textarea id="about" placeholder="Краткое описание (2-4 предложения)" required></textarea>
+
+        <h2>Технический стек</h2>
+        <textarea id="techStack" placeholder="HTML, CSS, JavaScript, React, Node.js"></textarea>
+
+        <h2>Навыки</h2>
+        <textarea id="skills" placeholder="Git, REST API, Docker, Agile"></textarea>
+
+        <h2>Опыт работы (каждый с новой строки)</h2>
+        <textarea id="experience" placeholder="Frontend Developer — Company X (2023–2024)&#10;Разработка SPA на React"></textarea>
+
+        <h2>Проекты (каждый с новой строки)</h2>
+        <textarea id="projects" placeholder="CV Generator — HTML/CSS/JS&#10;Интернет-магазин на React"></textarea>
+
+        <h2>Образование</h2>
+        <textarea id="education" placeholder="Университет X — Информатика (2020–2024)"></textarea>
+
+        <h2>Сертификаты</h2>
+        <textarea id="certificates" placeholder="JavaScript Certificate, AWS Cloud Practitioner"></textarea>
+
+        <h2>Языки</h2>
+        <textarea id="languages" placeholder="Русский — родной, Английский — B2"></textarea>
 
         <button type="submit">Сохранить CV</button>
+
     </form>
 </div>
 
